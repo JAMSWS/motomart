@@ -11,9 +11,8 @@
             <div class="col-md-12">
                 <h4 class="mb-4">Our Categories</h4>
             </div>
+            
             @forelse ($categories as $categoryItem)
-
-
             <div class="col-6 col-md-3">
                 <div class="category-card">
                     <a href="{{ url('/collections/'.$categoryItem->slug) }}">

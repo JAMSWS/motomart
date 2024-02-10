@@ -19,19 +19,19 @@
 
 
 
-    <div class="top-navbar bg-danger">
+    <div class="top-navbar bg-white">
         <div class="container-fluid"  >
             <div class="row">
                 <div class="col-md-2 my-auto d-none d-sm-none d-md-block d-lg-block" >
                     <a class="navbar-brand" style="font-size: 30px" href="{{ url('/') }}">
-                        <img style="width:200px" src="{{ asset('assets/images/motomart.png') }}" alt="">
+                        <img style="width:150px; margin-left: 10rem;" src="{{ asset('assets/images/newlogomotomart.png') }}" alt="">
                     </a>
                 </div>
                 <div class="col-md-5 my-auto">
                     <form role="search">
-                        <div class="input-group">
+                        <div class="input-group" style="margin-left: 15rem;">
                             <input type="search" placeholder="Search your parts now!" class="form-control"  />
-                            <button class="btn bg-white" type="submit">
+                            <button class="btn bg-danger" type="submit">
                                 <i class="fa fa-search"></i>
                             </button>
                         </div>
@@ -145,7 +145,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('/') }}">Fashions</a>
                     </li>
-                    
+
                 </ul>
             </div>
         </div>

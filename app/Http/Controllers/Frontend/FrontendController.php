@@ -21,4 +21,18 @@ class FrontendController extends Controller
 
         return view('frontend.collections.category.index', compact('categories'));
     }
+
+    public function products($category_slug)
+    {
+        $category = Category::where('slug',$category_slug)->first();
+        if($category)
+        {
+            $products = $category->products()->get();
+            return view('frontend.collections.products.index');
+        }
+        else
+        {
+            return redirect()->back();
+        }
+    }
 }

@@ -63,7 +63,7 @@
     @livewireStyles
 
 </head>
-<body style="background-color: #ffffff">
+<body style="background-color: #727272">
     <div id="app">
 
 
