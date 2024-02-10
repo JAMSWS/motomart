@@ -7,15 +7,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
 
-    <title>@yield('title') </title>
+    <title> @yield('title') </title>
+
+    <meta name="description" content="@yield('meta_description')" />
+    <meta name="keyword" content="meta_keyword" />
+    <meta name="author" content="Motomart" />
 
 
     <!-- Font Awesome -->
@@ -70,6 +72,8 @@
 
 
         @include('layouts.inc.frontend.navbar')
+
+        
 
 
         {{-- <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
@@ -164,6 +168,9 @@
 
         <main>
             @yield('content')
+
+
+
         </main>
     </div>
 

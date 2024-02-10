@@ -28,7 +28,7 @@ class FrontendController extends Controller
         if($category)
         {
             $products = $category->products()->get();
-            return view('frontend.collections.products.index');
+            return view('frontend.collections.products.index', compact('products', 'category'));
         }
         else
         {
