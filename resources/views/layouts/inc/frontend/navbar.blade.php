@@ -1,11 +1,8 @@
-
 <div>
     <!-- Include login modal -->
     @if (Route::has('login') && !Auth::check())
     @include('auth.modal-login')
     @endif
-
-
 
 </div>
 
@@ -16,22 +13,19 @@
 
 
 <div class="main-navbar shadow-sm sticky-top">
-
-
-
-    <div class="top-navbar bg-danger">
+    <div class="top-navbar bg-white">
         <div class="container-fluid"  >
             <div class="row">
                 <div class="col-md-2 my-auto d-none d-sm-none d-md-block d-lg-block" >
                     <a class="navbar-brand" style="font-size: 30px" href="{{ url('/') }}">
-                        <img style="width:200px" src="{{ asset('assets/images/motomart.png') }}" alt="">
+                        <img style="width:150px; margin-left: 10rem;" src="{{ asset('assets/images/newlogomotomart.png') }}" alt="">
                     </a>
                 </div>
                 <div class="col-md-5 my-auto">
                     <form role="search">
-                        <div class="input-group">
+                        <div class="input-group" style="margin-left: 15rem;">
                             <input type="search" placeholder="Search your parts now!" class="form-control"  />
-                            <button class="btn bg-white" type="submit">
+                            <button class="btn bg-danger" type="submit">
                                 <i class="fa fa-search"></i>
                             </button>
                         </div>
@@ -56,24 +50,13 @@
                         @endif
 
 
-
-
                         @if (Route::has('register'))
                             <li class="nav-item">
                                 <a class="nav-link" id="registerButton" data-bs-toggle="modal" data-bs-target="#registermodal">{{ __('Register') }}</a>
                             </li>
                         @endif
 
-
-
-
                     @else
-
-
-
-
-
-
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -97,27 +80,14 @@
                             </a></li>
                             </ul>
                         </li>
-
-
                     @endguest
 
-
-
-
-
-
                     </ul>
-
-
-
-
-                </div>
-
-
-            </div>
+             </div>
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg">
+</div>
+ <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand d-block d-sm-block d-md-none d-lg-none" href="#">
                 Funda Ecom
@@ -145,13 +115,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('/') }}">Fashions</a>
                     </li>
-                    
+
                 </ul>
             </div>
         </div>
     </nav>
-
-
 </div>
 
 
