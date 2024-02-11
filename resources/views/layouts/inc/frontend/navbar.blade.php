@@ -1,11 +1,8 @@
-
 <div>
     <!-- Include login modal -->
     @if (Route::has('login') && !Auth::check())
     @include('auth.modal-login')
     @endif
-
-
 
 </div>
 
@@ -16,9 +13,6 @@
 
 
 <div class="main-navbar shadow-sm sticky-top">
-
-
-
     <div class="top-navbar bg-white">
         <div class="container-fluid"  >
             <div class="row">
@@ -56,24 +50,13 @@
                         @endif
 
 
-
-
                         @if (Route::has('register'))
                             <li class="nav-item">
                                 <a class="nav-link" id="registerButton" data-bs-toggle="modal" data-bs-target="#registermodal">{{ __('Register') }}</a>
                             </li>
                         @endif
 
-
-
-
                     @else
-
-
-
-
-
-
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -97,27 +80,14 @@
                             </a></li>
                             </ul>
                         </li>
-
-
                     @endguest
 
-
-
-
-
-
                     </ul>
-
-
-
-
-                </div>
-
-
-            </div>
+             </div>
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg">
+</div>
+ <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand d-block d-sm-block d-md-none d-lg-none" href="#">
                 Funda Ecom
@@ -150,8 +120,6 @@
             </div>
         </div>
     </nav>
-
-
 </div>
 
 
