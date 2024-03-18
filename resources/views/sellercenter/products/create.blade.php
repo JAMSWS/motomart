@@ -128,12 +128,19 @@
 
                                     <div class="mb-3">
                                         <label>Original price</label>
-                                        <input type="text" name="original_price" class="form-control">
+                                        <div class="input-group">
+                                            <span class="input-group-text">₱</span>
+                                            <input type="number" step="0.01" name="original_price" class="form-control">
+                                        </div>
                                     </div>
+
 
                                     <div class="mb-3">
                                         <label>Selling price</label>
-                                        <input type="text" name="selling_price" class="form-control">
+                                        <div class="input-group">
+                                            <span class="input-group-text">₱</span>
+                                            <input type="number" step="0.01" name="selling_price" class="form-control">
+                                        </div>
                                     </div>
 
                                     <div class="mb-3">

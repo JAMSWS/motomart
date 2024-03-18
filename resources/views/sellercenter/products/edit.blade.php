@@ -127,14 +127,23 @@
                             <div class="col-md-4">
                                 <div class="mb-3">
 
+                                    
+
                                     <div class="mb-3">
                                         <label>Original price</label>
-                                        <input type="text" name="original_price" value="{{ $product->original_price }}" class="form-control">
+                                        <div class="input-group">
+                                            <span class="input-group-text">₱</span>
+                                            <input type="number" step="0.01" value="{{ $product->selling_price }}" name="original_price" class="form-control">
+                                        </div>
                                     </div>
+
 
                                     <div class="mb-3">
                                         <label>Selling price</label>
-                                        <input type="text" name="selling_price" value="{{ $product->selling_price }}" class="form-control">
+                                        <div class="input-group">
+                                            <span class="input-group-text">₱</span>
+                                            <input type="number" step="0.01" value="{{ $product->original_price }}" name="selling_price" class="form-control">
+                                        </div>
                                     </div>
 
                                     <div class="mb-3">

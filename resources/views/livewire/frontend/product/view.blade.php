@@ -28,8 +28,8 @@
                             Home / {{ $product->category->name }} / {{ $product->name }}
                         </p>
                         <div>
-                            <span class="selling-price">₱{{ $product->selling_price }}</span>
-                            <span class="original-price">₱{{ $product->original_price }}</span>
+                            <span class="selling-price">₱{{ number_format($product->selling_price, 2) }}</span>
+                            <span class="original-price">₱{{ number_format($product->original_price, 2) }}</span>
                         </div>
 
                         <div>

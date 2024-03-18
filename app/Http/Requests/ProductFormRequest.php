@@ -57,12 +57,12 @@ class ProductFormRequest extends FormRequest
 
             'original_price' => [
                 'required',
-                'integer'
+
             ],
 
             'selling_price' => [
                 'required',
-                'integer'
+                
             ],
 
             'quantity' => [

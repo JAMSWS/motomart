@@ -81,6 +81,7 @@
                 <li class="nav-item">
                     <a class="nav-link text-black" href="{{ url('/collections') }}">All Categories</a>
                 </li>
+                
             </ul>
         </div>
     </div>

@@ -62,8 +62,10 @@
                                 </a>
                                 </h5>
                                 <div>
-                                    <span class="selling-price"> ₱ {{ $productItem->selling_price }}</span>
-                                    <span class="original-price">₱ {{ $productItem->original_price }}</span>
+                                    <!-- Selling Price -->
+                                    <span class="selling-price"> ₱ {{ number_format($productItem->selling_price, 2) }}</span>
+                                    <!-- Original Price -->
+                                    <span class="original-price">₱ {{ number_format($productItem->original_price, 2) }}</span>
                                 </div>
 
                             </div>

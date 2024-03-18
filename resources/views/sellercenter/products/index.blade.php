@@ -187,7 +187,7 @@
                                 <td>{{ $product->status == '1' ? 'hidden':'Visible' }}</td>
                                 <td>
                                     <a href="{{ url('sellercenter/products/'.$product->id.'/edit') }}" class="btn btn-success">Edit</a>
-                                    <a href="{{ url('sellercenter/products/'.$product->id.'/delete') }}" onclick="return confirm('Are you sure, you want to delete this data?')" class="btn btn-danger">Delete</a>
+                                    <a href="{{ url('sellercenter/products/'.$product->id.'/delete') }}" onclick="return confirm('Are you sure, you want to delete this data? There is no way back!')" class="btn btn-danger">Delete</a>
                                 </td>
 
 

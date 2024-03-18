@@ -39,7 +39,7 @@
     <link href="css/font-awesome.min.css" rel="stylesheet" />
 
     {{-- motomart icon --}}
-    <link rel="icon"  src="{{ asset('assets/images/newlogomotomart.png') }}">
+    <link rel="icon"  src="{{ asset('assets/images/minimoto.png') }}">
 
     <!-- plugins:css -->
 
@@ -204,10 +204,10 @@
                     <div class="widget_menu">
                        <h3>Menu</h3>
                        <ul>
-                          <li><a href="#">Home</a></li>
-                          <li><a href="#">About</a></li>
-                          <li><a href="#">Services</a></li>
-                          <li><a href="#">Contact</a></li>
+                          <li><a href="/">Home</a></li>
+                          <li><a href="/wishlist">Wishlist</a></li>
+                          <li><a href="/cart">Shopping Cart</a></li>
+                          {{-- <li><a href="/checkout">Checkout</a></li> --}}
                        </ul>
                     </div>
                  </div>
@@ -216,8 +216,8 @@
                         <div class="widget_menu">
                         <h3>Account</h3>
                         <ul>
-                            <li><a href="#">Account</a></li>
-                            <li><a href="#">Checkout</a></li>
+
+                            <li><a href="/checkout">Checkout</a></li>
                         </ul>
                         </div>
                     </div>
@@ -232,25 +232,27 @@
                      </div>
                 </div>
                  </div>
-                 <div class="col-md-4 ml-4">
-                    <div class="widget_menu">
-                       <h3>Become a Seller</h3>
-                       <div class="information_f">
-                         <p></p>
-                       </div>
-                       <div class="form_sub">
-                          <form>
-                             <fieldset>
-                                <div class="field">
-                                   {{-- <input type="email" placeholder="Enter Your Mail" name="email" />
-                                   <input type="submit" value="Subscribe" /> --}}
-                                   <a class="btn btn-danger"  wire:click="btnSellerCenter" href="{{ url('sellercenter/products') }}">Seller Center</a>
-                                </div>
-                             </fieldset>
-                          </form>
-                       </div>
+
+                    <div class="col-md-4 ml-4">
+                        <div class="widget_menu">
+                            <h3>Become a Seller</h3>
+                            <div class="information_f">
+                                <p></p>
+                            </div>
+                            <div class="form_sub">
+                                <form>
+                                    <fieldset>
+                                        <div class="field">
+                                        {{-- <input type="email" placeholder="Enter Your Mail" name="email" />
+                                        <input type="submit" value="Subscribe" /> --}}
+                                        <a class="btn btn-danger"  wire:click="btnSellerCenter" href="{{ url('sellercenter/products') }}">Seller Center</a>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                 </div>
+
                  </div>
               </div>
            </div>
@@ -335,8 +337,11 @@
     <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <script>
         window.addEventListener('message', event => {
-        alertify.set('notifier','position', 'top-right');
-        alertify.notify(event.detail.text, event.detail.type);
+        if(event.detail)
+        {
+            alertify.set('notifier','position', 'top-right');
+            alertify.notify(event.detail.text, event.detail.type);
+        }
         });
 
     </script>
